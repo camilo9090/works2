@@ -1,7 +1,7 @@
 :root {
 
-    --primario: #9c0d74;
-    --primarioOscuro: #870c64;
+    --primario: #8d0968;
+    --primarioOscuro: #6d0951;
     --secundario: #dae509;
     --secundarioOscuro: #b9c50b;
     --blanco: #FFF;
@@ -48,7 +48,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width:100%;
 }
 
 .contenedor {
@@ -79,4 +79,38 @@ h2 {
 h3 {
 
     font-size: 2.4rem;
+}
+
+/* Header */
+
+.header{
+
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+    margin: 3rem 0;
+}
+
+/* navegacio principal */
+.navegacion{
+
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    /* separa los elementos de una fila */
+    gap: 2rem;
+
+}
+.navegacion__enlace{
+
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+.navegacion__enlace:hover,.navegacion__enlace--activo{
+
+    color: var(--secundario);
 }
