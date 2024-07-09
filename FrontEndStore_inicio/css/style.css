@@ -238,9 +238,6 @@ enlace y le quita el magin */
     }
 }
 
-
-
-
 .nosotros__imagen{
     grid-row: 1/2;
     width: 100%;
@@ -251,5 +248,34 @@ enlace y le quita el magin */
     .nosotros__imagen{
 
         grid-column: 2/3;
+        width: 100%;
     }
+}
+
+/* Bloques */
+
+.bloques{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+@media (min-width:768px){
+
+    .bloques{
+
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+}
+.bloque__titulo{
+
+    margin: 0;
+}
+.bloque__imagen{
+ 
+    width: 100%;
 }
